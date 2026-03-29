@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cloudinary Paragraph Transform Demo using Pretext</title>
+    <style>
+      :root {
+        --text: #e5e7eb;
+        --muted: #94a3b8;
+        --accent: #22d3ee;
+      }
+      * {
+        box-sizing: border-box;
+      }
+      html {
+        min-height: 100%;
+      }
+      body {
+        position: relative;
+        margin: 0;
+        min-height: 100%;
+        font-family: Arial, Helvetica, sans-serif;
+        color: var(--text);
+        background: radial-gradient(circle at top, #1e293b 0%, #0f172a 55%);
+      }
+      main {
+        max-width: 1180px;
+        margin: 0 auto;
+        padding: 24px;
+        padding-bottom: 120px;
+      }
+      h1 {
+        margin: 0 0 10px;
+        font-size: 1.95rem;
+      }
+      .lead {
+        margin: 0 0 20px;
+        color: var(--muted);
+        line-height: 1.6;
+        font-size: 1.1rem;
+      }
+      #paragraphs {
+        display: grid;
+        gap: 26px 28px;
+      }
+      @media (min-width: 940px) {
+        #paragraphs {
+          grid-template-columns: 1fr 1fr;
+          align-items: start;
+        }
+      }
+      .transform-paragraph {
+        margin: 0;
+        padding: 0;
+        line-height: 1.6;
+        color: #dbe7f6;
+      }
+      .transform-paragraph.active h2 {
+        color: #67e8f9;
+      }
+      .transform-paragraph h2 {
+        margin: 0 0 4px;
+        font-size: 1.12rem;
+        color: var(--accent);
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+      }
+      .transform-paragraph code {
+        display: inline-block;
+        margin: 0 0 8px;
+        font-size: 1.06rem;
+        color: #bae6fd;
+        word-break: break-all;
+      }
+      .flow-area {
+        position: relative;
+        min-height: 120px;
+      }
+      .flow-host {
+        position: relative;
+        min-height: 120px;
+      }
+      .flow-line {
+        position: absolute;
+        left: 0;
+        white-space: nowrap;
+        color: #dbe7f6;
+      }
+      .shared-image {
+        position: absolute;
+        z-index: 9999;
+        width: min(44vw, 280px);
+        min-width: 120px;
+        height: auto;
+        object-fit: cover;
+        border-radius: 10px;
+        box-shadow: 0 12px 32px rgba(0, 0, 0, 0.45);
+        cursor: grab;
+        touch-action: none;
+        user-select: none;
+      }
+      .shared-image:active {
+        cursor: grabbing;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <h1>Surf's Up, Dude, Flow with Us!</h1>
+      <p class="lead">
+        Drag the surf image anywhere on the screen. There are no drop zones: whichever paragraph
+        contains the center of the image drives the Cloudinary transformation. Text in each block
+        reflows when the image overlaps it.
+      </p>
+      <section id="paragraphs"></section>
+    </main>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
