@@ -6,16 +6,10 @@ Interactive demo: one surf image floats over the page; **whichever paragraph con
 
 Screen recording of the interaction:
 
-<video controls muted playsinline preload="metadata" width="960">
-  <source src="./reflowing-demo.mp4" type="video/mp4" />
-  Your browser does not support embedded video playback.
-</video>
+[![Watch the demo](https://res.cloudinary.com/jen-demos/video/upload/so_2.5/f_jpg/v1774904308/reflowing-demo_yvmjep.jpg)](https://res.cloudinary.com/jen-demos/video/upload/v1774904308/reflowing-demo_yvmjep.mp4)
 
-Fallback link: [`reflowing-demo.mp4`](./reflowing-demo.mp4)
 
-Open the file locally in QuickTime, VLC, or your browser if it supports `.mov` playback.
-
-## What it shows
+## What's Goin' On Here!?
 
 - **Single shared image** — `curricula-images/surf.jpg` on [Cloudinary](https://cloudinary.com/), delivered with different transformation chains.
 - **No drop zones** — pointer-drag the image anywhere on the document; transform switches when the **center** of the image enters a new paragraph block.
