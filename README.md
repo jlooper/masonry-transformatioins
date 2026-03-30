@@ -7,11 +7,12 @@ Interactive demo: one surf image floats over the page; **whichever paragraph con
 Screen recording of the interaction:
 
 <video controls muted playsinline preload="metadata" width="960">
+  <source src="./reflowing-demo.mp4" type="video/mp4" />
   <source src="./reflowing-demo.mov" type="video/quicktime" />
   Your browser does not support embedded video playback.
 </video>
 
-Fallback link: [`reflowing-demo.mov`](./reflowing-demo.mov)
+Fallback links: [`reflowing-demo.mp4`](./reflowing-demo.mp4) · [`reflowing-demo.mov`](./reflowing-demo.mov)
 
 Open the file locally in QuickTime, VLC, or your browser if it supports `.mov` playback.
 
